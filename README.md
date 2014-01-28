@@ -7,4 +7,4 @@ Place .js file in folder and link to it in html head.
 
 
 Example:
-[script type='text/javascript' src='js/themes/dark-cyan-1.3.9.js'][/script]
+<code><script type='text/javascript' src='js/themes/dark-cyan-1.3.9.js'></script></code>
