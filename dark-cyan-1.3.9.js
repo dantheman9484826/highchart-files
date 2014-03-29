@@ -1,6 +1,6 @@
-/**
- * Dark Theme 1.3.9 for Highcharts JS
- * @author Daniel Berzanti 2013 | deebee2012@rocketmail.com
+/*
+ Dark Theme 1.3.9 for Highcharts JS
+ @author Daniel Berzanti 2013 <deebee2012@rocketmail.com>
 */
 
 
