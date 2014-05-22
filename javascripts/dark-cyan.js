@@ -1,13 +1,13 @@
 /*
- Dark Cyan Theme for Highcharts
- @author Daniel Berzanti <deebee2012@rocketmail.com>
+	Dark Theme 1.3.9 for Highcharts JS
+	@author Daniel Berzanti <deebee2012@rocketmail.com>
+	Optimised for Linux default fonts
 */
 
 
 Highcharts.theme = {
 	
 	chart: {
-		//backgroundColor : ' #3F4049'  // '#3F4049'  or 'transparent'
 		backgroundColor: {
 			linearGradient: { x1: 0, y1: 0, x2: 0.1, y2: 0.5},
 			stops: [
@@ -15,11 +15,10 @@ Highcharts.theme = {
 				[0.7, 'rgb(63, 64, 73)']
 			]
 		}
-		//plotBackgroundImage : 'img/plot_bg.png'
 	},
 	
 	title : {
-		style : { color : '#5E88F7', fontFamily : 'Roboto Thin,arial,helvetica'}
+		style : { color : '#5E88F7', fontFamily : '"Droid Sans", "DejaVu Sans", "Roboto Thin", Arial, Verdana, sans-serif'}
 	},
 	
 	xAxis : {
@@ -57,16 +56,34 @@ Highcharts.theme = {
 	tooltip : {
 		borderColor : '#5E88F7',
 		backgroundColor : '#111',
-		style : {fontSize : '11px', color : '#C0C0C0', padding: '8px'}
+		shadow: false,
+		style : { color : '#C0C0C0', padding: '8px'}
 	},
 
-
 	plotOptions : {
-				candlestick : {
-					upColor : '#FFFFFF',
-					color : '#5E88F7',
-					lineColor : '#5E88F7'
-				},
+		series : { animation : false },
+		candlestick : {
+			upColor : '#FFFFFF',
+			upLineColor : '#acbee8',
+			color : '#5E88F7',
+			lineColor : '#5E88F7',
+			lineWidth : 0.8
+		},
+		ohlc : {
+			upColor : '#FFFFFF',
+			upLineColor : '#acbee8',
+			color : '#5E88F7',
+			lineColor : '#5E88F7',
+			lineWidth : 0.8
+		},
+		line : {
+			color : '#839bfc',
+			lineWidth : 0.8
+		},
+		spline : {
+			color : '#839bfc',
+			lineWidth : 0.8
+		}
 	},
 
 	toolbar: {
@@ -93,51 +110,52 @@ Highcharts.theme = {
 	},
 	
 	rangeSelector : {
-				inputStyle : { color: '#b9bbc8', font: '11px Ubuntu,arial,helvetica', border: '2px solid #000000', backgroundColor: '#000000'},
-				labelStyle : { color : '#b9bbc8'},
-				inputBoxBorderColor : '#000000',
-				inputBoxWidth : 80,
-				buttonTheme: {
+		inputStyle : { 
+		color: '#b9bbc8', 
+		font: '11px Ubuntu,arial,helvetica,sans-serif', 
+		border: '2px solid #000000', 
+		backgroundColor: '#000000'},
+		labelStyle : { color : '#b9bbc8'},
+		inputBoxBorderColor : '#000000',
+		inputBoxWidth : 80,
+		buttonTheme: {
+			fill: {
+				linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+				stops: [
+				[0.4, '#666'],
+				[0.6, '#222']
+				]
+			},
+			stroke : '#555',
+			style : {color : '#b2b2b2'},
+			states: {
+				hover: {
 					fill: {
 						linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
 						stops: [
-							[0.4, '#666'],
-							[0.6, '#222']
+						[0.4, '#BBB'],
+						[0.6, '#888']
 						]
 					},
-					stroke : '#555',
-					style : {color : '#b2b2b2'},
-					states: {
-						hover: {
-							fill: {
-								linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-								stops: [
-									[0.4, '#BBB'],
-									[0.6, '#888']
-								]
-							},
-							stroke: '#000000',
-							style: {
-								color: 'white'
-							}
-						},
-						select: {
-							fill: {
-								linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-								stops: [
-									[0.1, '#222'],
-									[0.8, '#444']
-								]
-							},
-							stroke: '#333',
-							style: {
-								color: '#15ADFF',
-								fontWeight: 'normal'
-							}
-						}
+					stroke: '#000000',
+					style: {color: 'white'}
+					},
+				select: {
+					fill: {
+						linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+						stops: [
+						[0.1, '#222'],
+						[0.8, '#444']
+						]
+					},
+					stroke: '#333',
+					style: {
+						color: '#15ADFF',
+						fontWeight: 'normal'
 					}
 				}
-				
+			}
+		}
 	},
 
 	navigator : {
