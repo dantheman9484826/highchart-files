@@ -1,7 +1,7 @@
 /*
 	Retro theme for Highcharts JS
 	@author Daniel Berzanti <deebee2012@rocketmail.com>
-  Optimised for Linux default fonts
+	Optimised for Linux default fonts
 */
 
 Highcharts.theme = {
@@ -156,7 +156,6 @@ Highcharts.theme = {
 			}
 		}
 	},
-
 	// scroll charts
 	rangeSelector: {
 		buttonTheme: {
@@ -191,7 +190,6 @@ Highcharts.theme = {
 			color: '#666'
 		}
 	},
-
 	navigator: {
 		handles: {
 			backgroundColor: '#666',
@@ -204,7 +202,6 @@ Highcharts.theme = {
 			lineColor: '#A6C7ED'
 		}
 	},
-
 	scrollbar: {
 		barBackgroundColor: {
 				linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
@@ -233,7 +230,6 @@ Highcharts.theme = {
 		},
 		trackBorderColor: '#666'
 	},
-
 	// special colors for some of the
 	legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
 	legendBackgroundColorSolid: 'rgb(35, 35, 70)',
