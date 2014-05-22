@@ -1,10 +1,9 @@
-highcharts-themes
+highcharts-files
 =================
 
-themes for highcharts &amp;/or highstock apis
+Themes and data study scripts for highcharts &amp;/or highstock apis
 
-Place .js file in folder and link to it in html head.
-
+Simply link to theme file in html head script tag & it will be applied.
 
 Example:
-<br><code>&lt;script type='text/javascript' src='js/themes/dark-cyan-1.3.9.js'&gt;&lt;/script&gt;</code>
+<br><code>&lt;script src='js/themes/dark-cyan.js'&gt;&lt;/script&gt;</code>
